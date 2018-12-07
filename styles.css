@@ -70,6 +70,10 @@ section {
   }
 }
 
+.logo {
+  height: 100px;
+}
+
 /* Navigation ------------------------------------------------------------------ */
 .sidebar {
   position: relative;
@@ -111,6 +115,13 @@ section {
   top: 0;
 }
 
+.sidenav-header {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
 .sidenav li a {
   padding: 15px 30px;
 }
@@ -124,9 +135,45 @@ section {
   display: block;
 }
 
+/* Accordion ------------------------------------------------------------------ */
+
+.chapter {
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: .5;
+  display: flex;
+  border: 0;
+}
+
 a.active {
   background-color: rgba(255,255,255,.4);
 }
+
+.accordion {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 15px 30px;
+  color: var(--white);
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--white);
+  color: var(--red);
+  opacity: 1;
+}
+
+.panel {
+   display: none;
+   overflow: hidden;
+}
+
 /* Typography ------------------------------------------------------------------ */
 
 h1 {
@@ -142,13 +189,6 @@ p {
   line-height: 1.6;
   font-weight: 300;
   margin-top: 0;
-}
-
-.chapter {
-  text-transform: uppercase;
-  font-weight: 600;
-  opacity: .5;
-  display: block;
 }
 
 .lead {
