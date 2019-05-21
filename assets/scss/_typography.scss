@@ -1,0 +1,45 @@
+/* Typography ------------------------------------------------------------------ */
+
+h1 {
+  margin-top: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.lead {
+  color: var(--black);
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+figcaption {
+  color: var(--black);
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+label {
+  line-height: 1.6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 700;
+}
